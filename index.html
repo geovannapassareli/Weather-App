@@ -4,10 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Previsão do Tempo</title>
 </head>
 <body>
-    
+    <form>
+        <label for="busca">Cidade:</label>
+        <input type="text" id="busca" placeholder="Digite o nome da cidade...">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <section id="resultado">
+        <h2 id="cidade">Cidade</h2>
+        <p id="dados">Dados de previsão</p>
+
+        <div id="detalhes">
+            <p id="emoji"></p>
+            <h3 id="temperatura">Temperatura</h3>
+            <div>
+                <dl id="min">
+                    <dt>Minimo</dt>
+                    <dd>Temp minima</dd>
+                </dl>       
+            </div>
+             <div>
+                <dl id="max">
+                    <dt>Maximo</dt>
+                    <dd>Temp maxima</dd>
+                </dl>
+            </div>       
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
