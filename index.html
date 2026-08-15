@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>Previsão do Tempo</title>
+
 </head>
 <body>
     <main>
-    <form>
-        <label for="busca">Cidade:</label>
-        <input type="text" id="busca" placeholder="Digite o nome da cidade...">
-        <button type="submit">Buscar</button>
-    </form>
+        <form id="formulario">
+            <label for="busca">Cidade:</label>
+            <input type="text" id="busca" placeholder="Digite o nome da cidade...">
+           <button type="submit">Buscar</button>
+        </form>
 
-    <section id="resultado">
-        <h2 id="cidade">Cidade</h2>
-        <p id="dados">Dados de previsão</p>
-
-        <div id="detalhes">
-            <p id="emoji"></p>
-            <h3 id="temperatura">Temperatura</h3>
-            <div>
-                <dl id="min">
-                    <dt>Minimo</dt>
-                    <dd>Temp minima</dd>
-                </dl>       
+        <section id="resultado">
+            <h1 id="cidade" class="cidade">Cidade</h1>
+            <p id="dados">Dados de previsão</p>
+            <span id="icone" style='font-size:100px;'>&#9925;</span>
+            <h2 id="temperatura">Temperatura°</h2>
+             <div id="detalhes">              
+                <div>
+                    <dl class="temp-item1">
+                        <dt>Min</dt>
+                        <dd>Temp minima°</dd>
+                    </dl>       
+                </div>
+                <div>
+                    <dl class="temp-item2">
+                        <dt>Max</dt>
+                        <dd>Temp maxima°</dd>
+                    </dl>
+                </div>       
             </div>
-             <div>
-                <dl id="max">
-                    <dt>Maximo</dt>
-                    <dd>Temp maxima</dd>
-                </dl>
-            </div>       
-        </div>
-    </section>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

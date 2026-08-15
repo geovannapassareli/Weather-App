@@ -1,0 +1,97 @@
+/*---TAGS---*/
+body{
+    background-image: url('/img/fundo2.webp');
+    background-repeat: no-repeat; /*não repetir a imagem*/
+    background-size: cover; /*dimensionando a imagem proporcionalmente para que não fique nenhum espaço em branco*/
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+main{
+    background: rgba(20, 40, 80, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color: #6999d7;
+    color: #fff;
+}
+
+/*---IDs---*/
+#busca{
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;  
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+}
+#resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#detalhes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*#min{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #fff;
+}
+
+#max{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*---CLASSES---*/
+
+.cidade{
+    text-transform: uppercase;
+}
+
+.temp-item1{
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    padding-right: 2rem; 
+    text-align: center;
+    flex: 1   
+}
+
+.temp-item2{
+    text-align: center;
+    flex: 1;
+    padding-left: 2rem;
+}
