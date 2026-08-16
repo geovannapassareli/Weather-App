@@ -1,0 +1,137 @@
+/*---TAGS---*/
+body{
+    background-image: url('img/back.jpg'); /*imagem de fundo*/
+    background-repeat: no-repeat; /*não repetir a imagem*/
+    background-size: cover; /*dimensionando a imagem proporcionalmente para que não fique nenhum espaço em branco*/
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+
+main{
+    background: rgba(255, 255, 80, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color:#fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+button:hover{
+    background-color: #6999d7;
+    color: #fff;
+}
+dt{font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+dl{
+    margin: 0;
+    text-align: center;
+}
+label{
+    visibility: hidden;
+}
+
+/*---IDs---*/
+#formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#busca{
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;  
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#detalhes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+}
+
+#tempItem1, #tempItem2{
+  
+    margin:0;    
+}
+
+#temperatura{
+    font-size: 3rem;
+    
+}
+#cidade{
+   font-size: 2rem;
+    font-weight: 700;
+   
+}
+
+/*---RESPONSIVIDADE (DISPOSITIVOS MÓVEIS)---*/
+@media (max-width: 600px) {
+    main {
+        padding: 1.5rem 1rem;
+        width: 95%;
+    }
+
+    #cidade {
+        font-size: 1.6rem;
+    }
+
+    #temperatura {
+        font-size: 2.8rem;
+    }
+
+    #busca {
+        font-size: 1rem;
+    }
+
+    #detalhes {
+        gap: 1.5rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+
+
+

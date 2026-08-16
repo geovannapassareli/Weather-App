@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Previsão do Tempo</title>
+
 </head>
 <body>
-    
+    <main>
+        <form id="formulario">
+            <label for="busca">Cidade:</label>
+            <input type="text" id="busca" placeholder="Digite o nome da cidade...">
+            <button type="submit" id="click" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <section id="resultado">
+            <h1 id="cidade">Cidade</h1>
+            <h3 id="dados">Dados de previsão</h3>
+            <img id="icone" src="" alt="Ícone do clima">
+            <p id="temperatura">Temperatura°</p>
+             <div id="detalhes">              
+                <div>
+                    <dl>
+                        <dt>Min</dt>
+                        <dd id="tempItem1">Temp minima°</dd>
+                    </dl>       
+                </div>
+                <div>
+                    <dl>
+                        <dt>Max</dt>
+                        <dd id="tempItem2">Temp maxima°</dd>
+                    </dl>
+                </div>       
+            </div>
+        </section>
+    </main>
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
