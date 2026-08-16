@@ -1,6 +1,6 @@
 /*---TAGS---*/
 body{
-    background-image: url('img/back.jpg'); /*imagem de fundo*/
+    background-image: url('./img/back.jpg'); /*imagem de fundo*/
     background-repeat: no-repeat; /*não repetir a imagem*/
     background-size: cover; /*dimensionando a imagem proporcionalmente para que não fique nenhum espaço em branco*/
     display: flex;  
