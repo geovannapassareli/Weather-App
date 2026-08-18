@@ -26,3 +26,5 @@ Requisições assíncronas a APIs REST (fetch, async/await, tratamento de respos
 Boas práticas de organização de código (funções reutilizáveis, separação de responsabilidades)
 Layout responsivo com Flexbox e efeitos visuais modernos em CSS (glassmorphism)
 Boas práticas de segurança básica em projetos client-side (uso de .gitignore para não versionar chaves de API)
+
+Acesse aqui: https://geovannapassareli.github.io/Weather-App/
